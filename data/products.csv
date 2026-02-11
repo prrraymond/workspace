@@ -1,0 +1,96 @@
+name,function_group,product_type,family_line
+Command Center,Operations,Platform,Enterprise Suite
+Enterprise Analytics,Data & Analytics,Platform,Enterprise Suite
+SSO Gateway,Security,Integration,Enterprise Suite
+Billing Suite,Finance,Tool,Enterprise Suite
+CRM Pro,Sales,Platform,Enterprise Suite
+Support Hub,Customer Success,Service,Enterprise Suite
+Compliance Mgr,Legal & Compliance,Tool,Enterprise Suite
+API Gateway,Engineering,Integration,Enterprise Suite
+HR Portal,HR & People,Platform,Enterprise Suite
+Marketing Hub,Marketing,Platform,Enterprise Suite
+Attribution Pro,Marketing,Tool,Growth Cloud
+Experiments,Product,Tool,Growth Cloud
+Engage Cloud,Marketing,Platform,Growth Cloud
+Lead Signals,Sales,Service,Growth Cloud
+Onboard Flow,Customer Success,Service,Growth Cloud
+Campaigns,Marketing,Tool,Growth Cloud
+Referral Engine,Marketing,Integration,Growth Cloud
+Forecaster,Data & Analytics,Tool,Growth Cloud
+Live Dashboards,Data & Analytics,Platform,Analytics Hub
+Predict AI,Data & Analytics,Service,Analytics Hub
+Warehouse Sync,Engineering,Integration,Analytics Hub
+Report Builder,Data & Analytics,Tool,Analytics Hub
+User Analytics,Product,Tool,Analytics Hub
+Revenue Intel,Finance,Tool,Analytics Hub
+Mix Modeler,Marketing,Tool,Analytics Hub
+Funnel Tracker,Sales,Tool,Analytics Hub
+Ops Metrics,Operations,Service,Analytics Hub
+Storefront,Product,Platform,Commerce Engine
+Pay Process,Finance,Service,Commerce Engine
+Inventory Mgr,Operations,Tool,Commerce Engine
+Fulfillment,Operations,Service,Commerce Engine
+Catalog Pro,Product,Tool,Commerce Engine
+Price Engine,Sales,Service,Commerce Engine
+Checkout Pro,Product,Tool,Commerce Engine
+Commerce API,Engineering,Integration,Commerce Engine
+Automator,Operations,Platform,Workflow Studio
+Approvals,Operations,Tool,Workflow Studio
+Orchestrator,Engineering,Service,Workflow Studio
+Doc Flows,Legal & Compliance,Tool,Workflow Studio
+HR Flows,HR & People,Service,Workflow Studio
+Sales Flows,Sales,Tool,Workflow Studio
+Mktg Automator,Marketing,Integration,Workflow Studio
+Service Desk,IT Infrastructure,Service,Workflow Studio
+Unified Inbox,Customer Success,Platform,Connect Platform
+Chat Widget,Customer Success,Tool,Connect Platform
+Video Meet,Operations,Service,Connect Platform
+SMS Connect,Marketing,Integration,Connect Platform
+Email Delivery,Marketing,Service,Connect Platform
+Voice Cloud,Customer Success,Platform,Connect Platform
+Webhooks,Engineering,Tool,Connect Platform
+Partner Portal,Sales,Platform,Connect Platform
+Team Collab,HR & People,Tool,Connect Platform
+Multi-Factor,Security,Service,Identity Shield
+ID Provider,Security,Platform,Identity Shield
+Access Ctrl,Security,Tool,Identity Shield
+Dir Sync,IT Infrastructure,Integration,Identity Shield
+Session Mgr,Security,Service,Identity Shield
+Audit Tool,Legal & Compliance,Tool,Identity Shield
+Threat Detect,Security,Service,Identity Shield
+CI/CD Runner,Engineering,Platform,DevOps Pipeline
+Container Reg,Engineering,Service,DevOps Pipeline
+Deploy Mgr,Engineering,Tool,DevOps Pipeline
+Infra Monitor,IT Infrastructure,Service,DevOps Pipeline
+Log Aggregator,IT Infrastructure,Tool,DevOps Pipeline
+Feature Flags,Product,Tool,DevOps Pipeline
+API Docs,Engineering,Tool,DevOps Pipeline
+Code Review,Engineering,Integration,DevOps Pipeline
+A/B Engine,Product,Platform,Insights Lab
+Survey Builder,Customer Success,Tool,Insights Lab
+NPS Tracker,Customer Success,Service,Insights Lab
+Mkt Research,Marketing,Service,Insights Lab
+Sentiment AI,Data & Analytics,Tool,Insights Lab
+Compete Intel,Sales,Service,Insights Lab
+Customer 360,Data & Analytics,Platform,Insights Lab
+Applicant ATS,HR & People,Platform,Talent Cloud
+Reviews Pro,HR & People,Tool,Talent Cloud
+Learning LMS,HR & People,Platform,Talent Cloud
+Comp Planner,Finance,Tool,Talent Cloud
+Pulse Survey,HR & People,Service,Talent Cloud
+Org Chart,HR & People,Tool,Talent Cloud
+Benefits Hub,HR & People,Service,Talent Cloud
+Pipeline Mgr,Sales,Platform,Revenue Ops
+Quote Gen,Sales,Tool,Revenue Ops
+Contract Mgr,Legal & Compliance,Tool,Revenue Ops
+Rev Recognition,Finance,Service,Revenue Ops
+Commission Trk,Finance,Tool,Revenue Ops
+Deal Room,Sales,Platform,Revenue Ops
+Subscriptions,Finance,Service,Revenue Ops
+Policy Mgr,Legal & Compliance,Platform,Compliance Center
+Audit Trail,Legal & Compliance,Service,Compliance Center
+Privacy Tool,Legal & Compliance,Tool,Compliance Center
+Reg Reporting,Finance,Service,Compliance Center
+Risk Assess,Security,Tool,Compliance Center
+Vendor Mgr,Operations,Tool,Compliance Center
+GDPR Toolkit,Legal & Compliance,Integration,Compliance Center
