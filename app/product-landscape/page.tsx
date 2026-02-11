@@ -241,20 +241,20 @@ function DistributionBar({
   color: string
 }) {
   return (
-    <div className="flex items-center gap-2">
-      <span className="text-[11px] text-slate-500 w-[120px] truncate text-right flex-shrink-0">
+    <div className="flex items-center gap-2 group/bar">
+      <span className="text-[11px] text-slate-500 w-[120px] truncate text-right flex-shrink-0 group-hover/bar:text-slate-700 transition-colors">
         {label}
       </span>
       <div className="flex-1 h-4 bg-slate-100 rounded-sm overflow-hidden">
         <div
-          className="h-full rounded-sm transition-all duration-500"
+          className="h-full rounded-sm transition-all duration-500 group-hover/bar:brightness-110"
           style={{
             width: `${(count / max) * 100}%`,
             backgroundColor: color,
           }}
         />
       </div>
-      <span className="text-[11px] font-medium text-slate-600 w-5 text-right flex-shrink-0">
+      <span className="text-[11px] font-medium text-slate-600 w-5 text-right flex-shrink-0 group-hover/bar:text-slate-900 transition-colors">
         {count}
       </span>
     </div>
@@ -300,9 +300,9 @@ export default function ProductLandscapePage() {
   const maxFamilyCount = Math.max(...familyCounts.map((f) => f.count))
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-white selection:bg-violet-100">
       {/* ── Top accent bar ─────────────────────────────────── */}
-      <div className="h-1 bg-gradient-to-r from-blue-500 via-violet-500 to-emerald-500" />
+      <div className="h-1.5 bg-gradient-to-r from-blue-500 via-violet-500 to-emerald-500" />
 
       {/* ── Header ─────────────────────────────────────────── */}
       <header className="border-b border-slate-200">
@@ -328,7 +328,7 @@ export default function ProductLandscapePage() {
             ].map((stat) => (
               <div
                 key={stat.label}
-                className="flex items-center gap-3 border border-slate-200 rounded-lg px-5 py-3"
+                className="flex items-center gap-3 border border-slate-200 rounded-lg px-5 py-3 hover:border-slate-300 hover:shadow-sm transition-all duration-200"
               >
                 <span className="text-2xl font-bold text-slate-900">
                   {stat.value}
@@ -367,13 +367,20 @@ export default function ProductLandscapePage() {
                   onClick={() =>
                     setActiveGroup(activeGroup === group ? null : group)
                   }
-                  className={`flex items-center gap-2 text-[13px] transition-all duration-200 hover:opacity-100 ${
-                    isActive ? "opacity-100" : "opacity-25"
+                  className={`flex items-center gap-2 text-[13px] rounded-full px-3 py-1.5 transition-all duration-200 hover:opacity-100 ${
+                    activeGroup === group
+                      ? "ring-1 ring-slate-300 bg-white shadow-sm opacity-100"
+                      : isActive
+                        ? "opacity-100 hover:bg-white/60"
+                        : "opacity-25 hover:opacity-60"
                   }`}
                 >
                   <span
-                    className="w-3 h-3 rounded-[3px] flex-shrink-0"
-                    style={{ backgroundColor: colors.dot }}
+                    className="w-3 h-3 rounded-[3px] flex-shrink-0 transition-transform duration-200"
+                    style={{
+                      backgroundColor: colors.dot,
+                      transform: activeGroup === group ? "scale(1.2)" : "scale(1)",
+                    }}
                   />
                   <span className="text-slate-700">{group}</span>
                 </button>
@@ -454,10 +461,10 @@ export default function ProductLandscapePage() {
               return (
                 <div
                   key={family}
-                  className="grid grid-cols-[180px_repeat(4,1fr)] gap-px bg-slate-200"
+                  className="grid grid-cols-[180px_repeat(4,1fr)] gap-px bg-slate-200 group/row"
                 >
                   {/* Row label */}
-                  <div className={`${rowBg} p-4 flex items-start`}>
+                  <div className={`${rowBg} p-4 flex items-start group-hover/row:bg-slate-50`}>
                     <div>
                       <p className="text-[13px] font-semibold text-slate-800 leading-tight">
                         {family}
@@ -474,7 +481,7 @@ export default function ProductLandscapePage() {
                     return (
                       <div
                         key={type}
-                        className={`${rowBg} p-3 min-h-[72px]`}
+                        className={`${rowBg} p-3 min-h-[72px] group-hover/row:bg-slate-50 transition-colors duration-150`}
                       >
                         <div className="flex flex-wrap gap-1.5">
                           {products.map((product) => {
@@ -486,10 +493,10 @@ export default function ProductLandscapePage() {
                             return (
                               <span
                                 key={product.name}
-                                className={`inline-flex items-center px-2.5 py-[5px] rounded-md text-[11px] font-medium leading-none transition-all duration-200 cursor-default ${
+                                className={`inline-flex items-center px-2.5 py-[5px] rounded-md text-[11px] font-medium leading-none transition-all duration-200 cursor-default hover:scale-105 hover:shadow-md ${
                                   isActive
                                     ? "opacity-100 shadow-sm"
-                                    : "opacity-[0.12]"
+                                    : "opacity-[0.12] hover:opacity-30"
                                 }`}
                                 style={{
                                   backgroundColor: colors.bg,
